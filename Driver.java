@@ -20,16 +20,15 @@ public class Driver {
     }
 
     public void driveByCar() {
-if(car.getFuelQuantity()<10){
-    System.out.println("Ох, доехать бы до заправки.");
-    car.drive(new Driver(this.driverName, this.car));
-} else if (car.getFuelQuantity() == 0) {
-    System.out.println("Сегодня я никуда не поеду.");
-} else if (car.getFuelQuantity() >= 10) {
-    System.out.println("Вроде права не забыл, ну поехали.");
-    car.drive(new Driver(this.driverName, this.car));
-}
-
+        if (car.getFuelQuantity() < 10) {
+            System.out.println("Ох, доехать бы до заправки");
+            car.drive(new Driver(this.driverName, this.car));
+        } else if (car.getFuelQuantity() == 0) {
+            System.out.println("Сегодня я никуда не поеду");
+        } else if (car.getFuelQuantity() >= 10) {
+            System.out.println("Вроде права не забыл, ну поехали");
+            car.drive(new Driver(this.driverName, this.car));
+        }
     }
 
     public String getDriverName() {

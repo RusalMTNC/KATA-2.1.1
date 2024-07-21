@@ -18,7 +18,7 @@ public class Car {
 
     public void drive(Driver driver) {
         setDriver(driver);
-        System.out.printf("Ну что %s, %s отвезёт тебя куда угодно", this.driver.getDriverName(), getModelName());
+        System.out.printf("Ну что %s, %s отвезет тебя куда угодно", this.driver.getDriverName(), getModelName());
     }
 
 
